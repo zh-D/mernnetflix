@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../authContext/AuthContext";
 import { logout } from "../../authContext/AuthActions";
 
-function Navbar() {
+const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const { dispatch } = useContext(AuthContext);
 
@@ -52,6 +52,6 @@ function Navbar() {
       </div>
     </div>
   );
-}
+};
 
 export default Navbar;
